@@ -5,7 +5,7 @@ body {
 }
 
 div {
-	width: 860px;
+	width: 1024px;
 	display: block;
 }
 
@@ -17,7 +17,7 @@ header {
 
 section {
 	float: right;
-	width: 500px;
+	width: 700px;
 }
 
 img {
