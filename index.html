@@ -32,12 +32,36 @@
 		<section id="path">
 			<h1>How did I get here?</h1>
 			<p>Here are some of the charts that I created before the final 5 above</p>
+			<!-- slide code copied from http://www.w3schools.com/w3css/w3css_slideshow.asp -->
 			<img class="mySlides" src="./images/register_vote_anes_v1.png">
 			<img class="mySlides" src="./images/vote_party_anes_v1.png">
 			<img class="mySlides" src="./images/engagement_anes_v1.png">
 			<img class="mySlides" src="./images/income_anes.png">
 			<img class="mySlides" src="./images/national_issue_anes_v1.png">
+			<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+			<a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
 		</section>
 	</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+    		var x = document.getElementsByClassName("mySlides");
+    		if (n > x.length) {slideIndex = 1}
+    			if (n < 1) {slideIndex = x.length} ;
+    			for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";
+    			}
+    			x[slideIndex-1].style.display = "block"; 
+    	}
+    </script>
+
 </body>
 </html>
